@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Resume CV - Frank</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Frank</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>References
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">SIRET <b>FRANK</b></h1>
+
+                            <h3 class="home__profession">Full-Stack developer</h3>
+
+                            <!-- Button to download yout CV saved in the pdf folder. Available for mobile -->
+                            <div>
+                                <a download="" href="assets/pdf/cv-frank-siret.pdf"
+                                    class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> Av. Federico Rey #4 Santiago de Cuba
+                            </span>
+
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> frank.siret@gmail.com
+                            </span>
+
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> (+53) 551 218 66
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://linkedin.com/in/frank-siret/" target="_black" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i> @frank-siret
+                        </a>
+
+                        <a href="https://github.com/FrankSiret" target="_black" class="social__link">
+                            <i class='bx bxl-github social__icon'></i> @FrankSiret
+                        </a>
+
+                        <a href="https://twitter.com/FrankSiret" target="_black" class="social__link">
+                            <i class='bx bxl-twitter social__icon'></i> @FrankSiret
+                        </a>
+
+                        <!-- <a href="https://stackoverflow.com/users/11278974/franksiret?tab=profile" target="_black"
+                            class="social__link">
+                            <i class='bx bxl-stack-overflow social__icon'></i> @FrankSiret
+                        </a>
+
+                        <a href="https://www.instagram.com/franksiret/" target="_black" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i> @FrankSiret
+                        </a> -->
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile__description">
+                        Bachelor's degree in Computer Science & <b>Full Stack Developer</b>.
+                        With good skills in mathematics, algorithms, and programming languages.
+                        I have several years of experience and achievements in the labor field.
+                        I like to improve my skills and I always push myself the most.
+                    </p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">COMPUTER SCIECE</h3>
+                                <span class="education__studies">Universidad de Oriente - Cuba</span>
+                                <span class="education__year">2014 - 2019</span>
+                                <ul class="education__list">
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Graduated with Gold Title and Scientific Merit Award.</div>
+                                    </li>
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Second best students from the 2019 class.</div>
+                                    </li>
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Several scientific events related to Computer Science.</div>
+                                    </li>
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Involved for 5 years in the ICPC Competitive Programming.
+
+                                            <a href="#" class="icpc__award-button" id="icpc__award-button">See
+                                                More</a>
+
+                                            <ul class="icpc__award" id="icpc__award">
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">2018 ICPC Caribbean Finals</p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad de las Ciencias Informáticas">Nov 2018 -
+                                                            UCI</span>
+                                                        <div class="icpc__award-data">
+                                                            <a target="_blank"
+                                                                href="https://icpc.baylor.edu/regionals/finder/caribfinals-2018/standings"
+                                                                class="icpc__award-place">
+                                                                14th place</a>
+                                                            <span class="icpc__award-team">Mirage Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">6th ICPC Challenger <a
+                                                                target="_blank"
+                                                                href="https://coj-forum.uci.cu/viewtopic.php?f=105&t=3603">"Battles
+                                                                in the
+                                                                Caribbean II"</a></p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad de las Ciencias Informáticas">Nov 2018 -
+                                                            UCI</span>
+                                                        <div class="icpc__award-data">
+                                                            <span class="icpc__award-place color-gold">1st place</span>
+                                                            <span class="icpc__award-team">Mirage Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">2017 ICPC Caribbean Finals</p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad Central Marta Abreu de las Villas">Nov
+                                                            2017 -
+                                                            UCLV</span>
+                                                        <div class="icpc__award-data">
+                                                            <a target="_blank"
+                                                                href="https://icpc.baylor.edu/regionals/finder/CF-2017/standings"
+                                                                class="icpc__award-place">
+                                                                13th place</a>
+                                                            <span class="icpc__award-team">A-SAO Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">5th ICPC Challenger <a
+                                                                target="_blank"
+                                                                href="https://coj-forum.uci.cu/viewtopic.php?f=77&t=3300&p=5077">"Connect
+                                                                4"</a></p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad Central Marta Abreu de las Villas">Nov
+                                                            2017 -
+                                                            UCLV</span>
+                                                        <div class="icpc__award-data">
+                                                            <span class="icpc__award-place color-gold">1st place</span>
+                                                            <span class="icpc__award-team">A-SAO Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">2015 ACM-ICPC Caribbean Finals</p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad de las Ciencias Informáticas">Nov 2015 -
+                                                            UCI</span>
+                                                        <div class="icpc__award-data">
+                                                            <a target="_blank"
+                                                                href="https://icpc.baylor.edu/regionals/finder/CF-2015/standings"
+                                                                class="icpc__award-place">
+                                                                20th place</a>
+                                                            <span class="icpc__award-team">A-SAO Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="icpc__award-item">
+                                                    <div class="icpc__time">
+                                                        <span class="icpc__rounder"></span>
+                                                        <span class="icpc__line"></span>
+                                                    </div>
+
+                                                    <div class="icpc__data bd-grid">
+                                                        <p class="icpc__award-title">2014 ACM-ICPC Caribbean Finals</p>
+                                                        <span class="icpc__award-date"
+                                                            title="Univeridad de las Ciencias Informáticas">Nov 2014 -
+                                                            UCI</span>
+                                                        <div class="icpc__award-data">
+                                                            <a target="_blank"
+                                                                href="https://icpc.baylor.edu/regionals/finder/CF-2014/standings"
+                                                                class="icpc__award-place">
+                                                                34th place</a>
+                                                            <span class="icpc__award-team">A-SAO Team</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Degree Thesis in the field of Information Retrieval.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Html
+                                <span class="skills__time">(7 years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Css
+                                <span class="skills__time">(7 years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Sass
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> TypeScript
+                                <span class="skills__time">(2 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Bootstrap 4
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> MongoDB
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> MySQL
+                                <span class="skills__time">(7 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Git
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> API Rest
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> UI / UX
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Scrum
+                                <span class="skills__time">(5 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> RUP
+                                <span class="skills__time">(5 years)</span>
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> React
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Spring Boot
+                                <span class="skills__time">(1 year)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> C/C++
+                                <span class="skills__time">(10+ years)</span>
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Java
+                                <span class="skills__time">(10+ years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Node
+                                <span class="skills__time">(4 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Qt Creator
+                                <span class="skills__time">(7 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Qt Quick / QML
+                                <span class="skills__time">(7 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Python
+                                <span class="skills__time">(5 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Adobe Photoshop
+                                <span class="skills__time">(10+ years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> LaTex
+                                <span class="skills__time">(3 years)</span>
+                            </li>
+                            <li class="skills__name skills__showmore">
+                                <span class="skills__circle"></span> Microsoft Office
+                                <span class="skills__time">(10+ years)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="skills-button" id="skills-button">See More</a>
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Software Developer</h3>
+                                <span class="experience__company">From 2021 | People Walking</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Designed and developed UI/UX for a
+                                            centralized backup center application for
+                                            Ancert
+                                            (<a target="_blank" href="http://www.ancert.com">http://www.ancert.com</a>)
+                                            the National Certification Agency or Notary of Spain.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Support junior developer boot camps on React JS and helped improve their
+                                            knowledge in the library.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Developed reusable components that help the team to finish Backup Center
+                                            project earlier than planned.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Fully remote work, completing assigned tasks on time, meeting customer
+                                            requirements and working under pressure.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Daily work progress reports following the workflow set by the team using
+                                            Beanstalk source version control software and Jira software development
+                                            Tool.</div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">React JS</li>
+                                        <li class="experience__technologies-item">Typescript</li>
+                                        <li class="experience__technologies-item">Bootstrap 4</li>
+                                        <li class="experience__technologies-item">Spring Boot (with JHipster)</li>
+                                        <li class="experience__technologies-item">PostgreSQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Computer Science Professor</h3>
+                                <span class="experience__company">From 2019 | Universidad de Oriente</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Teaches classes of Logic Math, Data Structures, and Artificial Inteligence.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Stands as Assistant Director of the International Collegiate Programming
+                                            Contest (<b>ICPC</b>) at the University.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Won the annual CITMA Award for Young Researchers.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Freelance Full-Stack Developer</h3>
+                                <span class="experience__company">From 2020 to 2021 | Freelance</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Designed and developed the website
+                                            <a target="_blank" href="https://www.reysis.com">https://www.reysis.com</a>
+                                            for
+                                            a small business in Cuba.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Guided digital marketing strategy for positioning the business on the web.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Developed frontend user interface.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Worked in a team of two members using agile methodologies (XP).</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Conducted meetings with the client and designed application architecture.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">React</li>
+                                        <li class="experience__technologies-item">Bootstrap 4</li>
+                                        <li class="experience__technologies-item">API Platform</li>
+                                        <li class="experience__technologies-item">Swagger</li>
+                                        <li class="experience__technologies-item">MySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">C++ Developer</h3>
+                                <span class="experience__company">From 2017 to 2021 | Centro de Biofísica Médica</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Contributed to designed and developed the medical imaging software
+                                            <b>Imagis</b>.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Support junior developer on C++ and helped improve their
+                                            knowledge in the language.</div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>Worked in more than 10 features such as design, report management,
+                                            transmission,
+                                            visualization, and image segmentation.</div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">C++</li>
+                                        <li class="experience__technologies-item">Java</li>
+                                        <li class="experience__technologies-item">VTK</li>
+                                        <li class="experience__technologies-item">ITK</li>
+                                        <li class="experience__technologies-item">DCMTK</li>
+                                        <li class="experience__technologies-item">Qt Framework</li>
+                                        <li class="experience__technologies-item">Lucene</li>
+                                        <li class="experience__technologies-item">Information Retrieval</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">React Certificate</h3>
+                            <span class="certificate__company">Dec 2020 | HackerRank</span>
+                            <p class="certificate__description">
+                                Provide knowledge and skills required to become a successful web and mobile
+                                application developer.</p>
+                        </div>
+
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Problem Solving Certificate</h3>
+                            <span class="certificate__company">Nov 2020 | HackerRank</span>
+                            <p class="certificate__description">
+                                Standardized assessment to help developers prove their coding skills.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <!-- <section class="references section" id="references">
+                    <h2 class="section-title">References</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Sr. Director</span>
+                            <h3 class="references__title">Mr. Clay Doe</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Mag. Developer</span>
+                            <h3 class="references__title">Mr. Clay Doe</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h3 class="section-title">Languages</h3>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Spanish
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-coffee interests__icon"></i>
+                            <span class="interests__name">Cofee</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">Read</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-pyramid interests__icon'></i>
+                            <span class="interests__name">Origami</span>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrollttop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

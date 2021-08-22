@@ -102,7 +102,7 @@ body.scale-cv {
 .scale-cv .change-theme,
 .scale-cv .generate-pdf,
 .scale-cv .skills-button,
-.scale-cv .education__award-button {
+.scale-cv .icpc__award-button {
   display: none;
 }
 
@@ -187,6 +187,18 @@ body.scale-cv {
 
 .scale-cv #skills.showmore .skills__showmore {
   margin-bottom: var(--mb-1);
+}
+
+.scale-cv .skills__content {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.scale-cv .skills__showmore {
+  display: none;
+}
+
+.scale-cv #skills.showmore .skills__showmore {
+  display: flex;
 }
 
 .scale-cv .interests__container {
@@ -524,7 +536,6 @@ img {
 }
 
 .icpc__award {
-  /* display: none; */
   overflow: hidden;
   max-height: 0;
   transition: 0.3s;
@@ -532,8 +543,7 @@ img {
 }
 
 .icpc__award.show {
-  /* display: block; */
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .icpc__award-item {
@@ -615,6 +625,10 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
 }
 
 .skills__circle,
@@ -802,7 +816,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .skills__content {
+  #skills.showmore .skills__content {
     grid-template-columns: repeat(1, 1fr);
   }
 

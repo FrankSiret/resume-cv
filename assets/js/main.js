@@ -85,16 +85,19 @@ themeButton.addEventListener('click', () => {
 // Skills
 const skillsButton = document.getElementById('skills-button')
 const skillsSection = document.getElementById('skills');
+const skillsItems = document.querySelectorAll('.skills__name.showmore');
 
 skillsButton.addEventListener('click', (e) => {
     e.preventDefault();
-    if (skillsButton.innerText == "See More") {
-        skillsSection.classList.add('showmore');
-        skillsButton.innerText = "See Less"
-    } else {
-        skillsSection.classList.remove('showmore');
+    if (skillsSection.classList.contains("show"))
         skillsButton.innerText = "See More"
-    }
+    else skillsButton.innerText = "See Less"
+    skillsSection.classList.toggle('show');
+    skillsSection.classList.toggle('hide');
+    skillsItems.forEach(item => {
+        item.classList.toggle('hide')
+        item.classList.toggle('show')
+    })
 })
 
 //Education Awards
@@ -131,19 +134,19 @@ let resumeButton = document.getElementById('resume-button')
 let opt = {
     margin: 1,
     filename: 'cv-frank-siret',
-    image: { type: 'jpeg', quality: .98 },
+    image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 4 },
     jsPDF: { format: 'a4', orientation: 'portrait' }
 }
 
 // Function to call areaCv and Html2Pdf options 
 function generateResume() {
-    html2pdf(areaCv, opt)
+    html2pdf().set(opt).from(areaCv).save();
 }
 
 // When the button is clicked, it executes the three functions
 resumeButton.addEventListener('click', () => {
     scaleCv()
-    setTimeout(generateResume, 1500)
-    setTimeout(removeScale, 5000)
+    setTimeout(generateResume, 2500)
+    setTimeout(removeScale, 2500)
 })

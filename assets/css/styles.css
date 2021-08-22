@@ -181,24 +181,12 @@ body.scale-cv {
   margin-bottom: var(--mb-1);
 }
 
-.scale-cv .skills__showmore {
-  margin-bottom: 0;
-}
-
-.scale-cv #skills.showmore .skills__showmore {
+.scale-cv .skills__name.show {
   margin-bottom: var(--mb-1);
 }
 
 .scale-cv .skills__content {
   grid-template-columns: repeat(1, 1fr);
-}
-
-.scale-cv .skills__showmore {
-  display: none;
-}
-
-.scale-cv #skills.showmore .skills__showmore {
-  display: flex;
 }
 
 .scale-cv .interests__container {
@@ -543,7 +531,7 @@ img {
 }
 
 .icpc__award.show {
-  max-height: 700px;
+  max-height: 1000px;
 }
 
 .icpc__award-item {
@@ -601,9 +589,10 @@ img {
 }
 
 .icpc__award-team {
-  padding: 0.1rem 0.3rem;
+  padding: 0.05rem 0.25rem;
   background-color: var(--container-color-alt);
   border-radius: 0.4rem;
+  margin-left: 0.25rem;
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
@@ -629,6 +618,7 @@ img {
 
 .skills__name {
   font-size: var(--normal-font-size);
+  transition: 0.3s;
 }
 
 .skills__circle,
@@ -646,30 +636,28 @@ img {
   text-align: center;
 }
 
-.skills__showmore {
-  height: 0;
+.skills__name.hide {
+  overflow: hidden;
+  max-height: 0;
   margin-bottom: 0;
-  visibility: hidden;
-  transition: 0.3s;
   opacity: 0;
 }
 
+.skills__name.show {
+  overflow: initial;
+  max-height: 100px;
+  margin-bottom: var(--mb-3);
+  opacity: 1;
+}
+
 .skills__time {
-  display: none;
   margin-left: 0.25rem;
   color: var(--text-color-light);
   font-size: var(--smaller-font-size);
 }
 
-#skills.showmore .skills__showmore {
-  height: initial;
-  margin-bottom: var(--mb-3);
-  visibility: visible;
-  opacity: 1;
-}
-
-#skills.showmore .skills__time {
-  display: block;
+.skills.hide .skills__time {
+  display: none;
 }
 
 /*========== CERTIFICATES ==========*/
@@ -750,6 +738,12 @@ img {
 }
 
 /*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 520px) {
+  .skills.show .skills__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media screen and (max-width: 320px) {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
@@ -816,8 +810,12 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #skills.showmore .skills__content {
+  .skills.show .skills__content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icpc__award-team {
+    border: 1px solid var(--text-color);
   }
 
   .languages__content {

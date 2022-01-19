@@ -10,6 +10,7 @@
   --text-color: #403a3a;
   --text-link: #2a65fa;
   --text-color-light: #707070;
+  --text-color-gold: goldenrod;
   --container-color: #fafafa;
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
@@ -22,6 +23,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.713rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -483,6 +485,10 @@ img {
   color: var(--title-color);
 }
 
+.external-link {
+  margin-left: 0.25rem;
+}
+
 .education__description,
 .experience__description {
   display: grid;
@@ -650,13 +656,31 @@ img {
   opacity: 1;
 }
 
+.skills__time-stars {
+  position: relative;
+}
+
 .skills__time {
   margin-left: 0.25rem;
   color: var(--text-color-light);
   font-size: var(--smaller-font-size);
 }
 
+.skills__stars {
+  position: absolute;
+  margin-left: 0.25rem;
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-gold);
+  border-radius: 0.5rem;
+  padding: 0 0.25rem;
+  top: 0;
+  right: -1.6rem;
+}
+
 .skills.hide .skills__time {
+  display: none;
+}
+.skills.hide .skills__stars {
   display: none;
 }
 

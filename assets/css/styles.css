@@ -412,6 +412,7 @@ img {
   gap: 1rem;
 }
 
+.home__information,
 .social__link {
   display: inline-flex;
   align-items: center;
@@ -419,6 +420,7 @@ img {
   color: var(--text-color);
 }
 
+.home__information:hover,
 .social__link:hover {
   color: var(--title-color);
 }

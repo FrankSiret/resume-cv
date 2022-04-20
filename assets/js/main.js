@@ -150,5 +150,3 @@ resumeButton.addEventListener('click', () => {
     setTimeout(generateResume, 2500)
     setTimeout(removeScale, 2500)
 })
-
-scaleCv()

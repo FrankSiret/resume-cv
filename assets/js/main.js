@@ -116,37 +116,37 @@ educationAwardButton.addEventListener('click', (e) => {
 })
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/
-function scaleCv() {
-    document.body.classList.add('scale-cv')
-}
+// function scaleCv() {
+//     document.body.classList.add('scale-cv')
+// }
 
 /*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/
-function removeScale() {
-    document.body.classList.remove('scale-cv')
-}
+// function removeScale() {
+//     document.body.classList.remove('scale-cv')
+// }
 
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
-let areaCv = document.getElementById('area-cv')
-let resumeButton = document.getElementById('resume-button')
+// let areaCv = document.getElementById('area-cv')
+// let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
-let opt = {
-    margin: 1,
-    filename: 'cv-frank-siret',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 4 },
-    jsPDF: { format: 'a4', orientation: 'portrait' }
-}
+// let opt = {
+//     margin: 1,
+//     filename: 'cv-frank-siret',
+//     image: { type: 'jpeg', quality: 0.98 },
+//     html2canvas: { scale: 4 },
+//     jsPDF: { format: 'a4', orientation: 'portrait' }
+// }
 
 // Function to call areaCv and Html2Pdf options 
-function generateResume() {
-    html2pdf().set(opt).from(areaCv).save();
-}
+// function generateResume() {
+//     html2pdf().set(opt).from(areaCv).save();
+// }
 
 // When the button is clicked, it executes the three functions
-resumeButton.addEventListener('click', () => {
-    scaleCv()
-    setTimeout(generateResume, 2500)
-    setTimeout(removeScale, 2500)
-})
+// resumeButton.addEventListener('click', () => {
+//     scaleCv()
+//     setTimeout(generateResume, 2500)
+//     setTimeout(removeScale, 2500)
+// })

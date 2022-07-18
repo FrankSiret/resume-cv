@@ -628,7 +628,7 @@ img {
 }
 
 .skills__name {
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2);
 }
 
 .skills__name {
@@ -661,7 +661,7 @@ img {
 .skills__name.show {
   overflow: initial;
   max-height: 100px;
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2);
   opacity: 1;
 }
 

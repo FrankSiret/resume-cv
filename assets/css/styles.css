@@ -743,6 +743,13 @@ img {
   margin-bottom: 0.25rem;
 }
 
+/*========== INTERESTS ==========*/
+.updated {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: .6rem;
+}
+
 /* Scroll top */
 .scrolltop {
   position: fixed;

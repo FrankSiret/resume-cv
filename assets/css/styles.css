@@ -608,17 +608,13 @@ img {
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,
-.languages__content {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .skills__content {
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
 }
 
 .languages__content {
-  gap: 0;
+  gap: 0.5rem;
 }
 
 .skills__name,
@@ -856,11 +852,6 @@ img {
 
   .icpc__award-team {
     border: 1px solid var(--text-color);
-  }
-
-  .languages__content {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
   }
 
   .interests__container {
